@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.branding {
+  display: flex;
+  padding: 10px 0px;
+  justify-content: center;
+}
+.brand-image img {
+  width: 1cm;
+  margin-right: 10px;
+}
+.brand-name h2 {
+  margin-top: 5px;
+}
+.contact-form {
+  margin-top: 40px;
+  margin-left: auto;
+  padding: 50px;
+  margin-right: auto;
+  background-color: rgb(173, 219, 234);
+  width: max-content;
+  margin-bottom: 108px;
+  border-radius: 15px;
+}
+.contact-form h3 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 30px;
+}
+.contact-form .details {
+  font-size: large;
+}
+.contact-form .details label {
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+.contact-form .details input {
+  margin-bottom: 20px;
+  padding: 7.5px 10px;
+  border-radius: 10px;
+  border: 0.25px solid black;
+  width: 300px;
+}
+.contact-form .details select {
+  padding: 7.5px 10px;
+  border-radius: 10px;
+  border: 0.25px solid black;
+  width: 300px;
+}
+.contact-form .details button {
+  width: 200px;
+  margin-top: 25px;
+  margin-left: 50px;
+  padding: 5px;
+}
+
+@media (max-width: 500px){
+  .contact-form {
+    margin-top: 40px;
+    padding: 50px;
+    background-color: rgb(173, 219, 234);
+    width: 300px;
+    margin-bottom: 108px;
+    border-radius: 15px;
+  }
+  .contact-form h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .contact-form .details label {
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+  .contact-form .details input {
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 7.5px 10px;
+    border-radius: 10px;
+    border: 0.25px solid black;
+    width: 200px;
+  }
+  .contact-form .details select {
+    padding: 7.5px 10px;
+    border-radius: 10px;
+    border: 0.25px solid black;
+    width: 200px;
+  }
+  .contact-form .details button {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 50px;
+    padding: 2.5px;
+  }
+  footer{
+      text-align: center;
+      margin-top: 260px;
+  }
+}
+@media (max-width: 400px){
+  .contact-form {
+    margin-top: 40px;
+    padding: 50px;
+    background-color: rgb(173, 219, 234);
+    width: 300px;
+    margin-bottom: 108px;
+    border-radius: 15px;
+  }
+  .contact-form h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .contact-form .details label {
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+  .contact-form .details input {
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 7.5px 10px;
+    border-radius: 10px;
+    border: 0.25px solid black;
+    width: 200px;
+  }
+  .contact-form .details select {
+    padding: 7.5px 10px;
+    border-radius: 10px;
+    border: 0.25px solid black;
+    width: 200px;
+  }
+  .contact-form .details button {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 50px;
+    padding: 2.5px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .contact-form {
+    margin-top: 40px;
+    padding: 50px;
+    background-color: rgb(173, 219, 234);
+    width: 300px;
+    margin-bottom: 108px;
+    border-radius: 15px;
+  }
+  .contact-form h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .contact-form .details label {
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+  .contact-form .details input {
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 7.5px 10px;
+    border-radius: 10px;
+    border: 0.25px solid black;
+    width: 200px;
+  }
+  .contact-form .details select {
+    padding: 7.5px 10px;
+    border-radius: 10px;
+    border: 0.25px solid black;
+    width: 200px;
+  }
+  .contact-form .details button {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 50px;
+    padding: 2.5px;
+  }
+}
+
+
+@media (max-width: 300px) {
+  .contact-form {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: rgb(173, 219, 234);
+    width: 240px;
+    margin-bottom: 108px;
+    border-radius: 15px;
+  }
+  .contact-form h3 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 30px;
+  }
+  .contact-form .details label {
+    margin-bottom: 10px;
+    font-weight: bolder;
+  }
+  .contact-form .details input {
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 7.5px 10px;
+    border-radius: 10px;
+    border: 0.25px solid black;
+    width: 200px;
+  }
+  .contact-form .details select {
+    padding: 7.5px 10px;
+    border-radius: 10px;
+    border: 0.25px solid black;
+    width: 200px;
+  }
+  .contact-form .details button {
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 50px;
+    padding: 2.5px;
+  }
+}
+
+@media (max-width: 400px){
+    .contact-form {
+      margin-top: 40px;
+      padding: 50px;
+      background-color: rgb(173, 219, 234);
+      width: 300px;
+      margin-bottom: 108px;
+      border-radius: 15px;
+    }
+    .contact-form h3 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 30px;
+    }
+    .contact-form .details label {
+      margin-bottom: 10px;
+      font-weight: bolder;
+    }
+    .contact-form .details input {
+      justify-content: center;
+      margin-bottom: 20px;
+      padding: 7.5px 10px;
+      border-radius: 10px;
+      border: 0.25px solid black;
+      width: 200px;
+    }
+    .contact-form .details select {
+      padding: 7.5px 10px;
+      border-radius: 10px;
+      border: 0.25px solid black;
+      width: 200px;
+    }
+    .contact-form .details button {
+      width: 100px;
+      margin-top: 25px;
+      margin-left: 50px;
+      padding: 2.5px;
+    }
+  }
+  
+  /*iphone XR*/
+  
+  @media (max-width: 414px) {
+    .contact-form {
+      margin-top: 40px;
+      padding: 50px;
+      background-color: rgb(173, 219, 234);
+      width: 300px;
+      margin-bottom: 108px;
+      border-radius: 15px;
+    }
+    .contact-form h3 {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 30px;
+    }
+    .contact-form .details label {
+      margin-bottom: 10px;
+      font-weight: bolder;
+    }
+    .contact-form .details input {
+      justify-content: center;
+      margin-bottom: 20px;
+      padding: 7.5px 10px;
+      border-radius: 10px;
+      border: 0.25px solid black;
+      width: 200px;
+    }
+    .contact-form .details select {
+      padding: 7.5px 10px;
+      border-radius: 10px;
+      border: 0.25px solid black;
+      width: 200px;
+    }
+    .contact-form .details button {
+      width: 100px;
+      margin-top: 25px;
+      margin-left: 50px;
+      padding: 2.5px;
+    }
+    
+    footer{
+        text-align: center;
+        margin-top: 210px;
+    }
+  }
