@@ -21,6 +21,7 @@
       </div>
     </header>
     <hr />
+    <form action="https://script.google.com/macros/s/AKfycbz3Vv4FZsjbdceM46bE4UqfaCQUME_udYyxzHe9_p2KqORILgMKzJpfUt3_U5Gevlnv/exec" method="post" name="formName" id="formName">
     <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
           <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
@@ -44,17 +45,14 @@
             </div>
             <div class="relative mb-4">
               <label for="group" class="leading-7 text-sm text-gray-600">Group</label>
-              <select class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" name="group" id="group">
-                <option value="">Select</option>
-                <option value="">Group A</option>
-                <option value="">Group B</option>
-              </select>
-            </div>
+              <input type="group" id="group" name="group" class="w-full bg-white rounded border border-gray-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+            </div>  
             <button type="submit" class="text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg"><a href="">Submit</a></button>
             <p class="text-xs text-gray-500 mt-3">Thank You For Your Response. We Will Reach To You Soon.....</p>
           </div>
         </div>
       </section>
+    </form>
       <footer class="text-gray-600 body-font">
         <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
           <a href="/index.html" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
@@ -92,5 +90,18 @@
           </span>
         </div>
       </footer>
+      
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz3Vv4FZsjbdceM46bE4UqfaCQUME_udYyxzHe9_p2KqORILgMKzJpfUt3_U5Gevlnv/exec'
+        const form = document.forms['formName']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thank you! your form is submitted successfully." ))
+            .then(() => {  window.location.reload(); })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
   </body>
 </html>
